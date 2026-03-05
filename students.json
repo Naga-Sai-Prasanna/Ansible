@@ -1,0 +1,39 @@
+{  
+    "students": [
+        {   
+            "firtsName": "prassu",
+            "dob": "08-05-2001",
+            "addresses": [
+             {  
+                "type": "perm",
+                "flatnumber": 3,
+                "city": "princess city"
+             },
+             {  
+                "type": "current",
+                "flatnumber": 131,
+                "city": "princess city"
+             }
+            ],
+            "skills": ["java", "devops"]
+        },
+        {   
+            "firtsName": "prassu",
+            "dob": "08-05-2001",
+            "addresses": [
+             {  
+                "type": "perm",
+                "flatnumber": 3,
+                "city": "princess city"
+             },
+             {  
+                "type": "current",
+                "flatnumber": 131,
+                "city": "princess city"
+             }
+            ],
+            "skills": ["java", "devops"]
+        }    
+    ]
+    
+}

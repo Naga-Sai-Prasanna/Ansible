@@ -1,0 +1,38 @@
+<! -- STUDENT object -- >
+<students>
+    <student> 
+        <FirstName>Prassu</FirstName>
+        <DOB>08-05-2001</DOB>
+        <Email>prasanakopparthi3011@gmail.com</Email>
+        <Addresses>
+            <PermAddress>
+                <FlatNumber>3-131/7</FlatNumber>
+                <Street>prassu's street</Street>
+                <city>princess city</city>
+            </PermAddress>
+            <CurrentAddress>
+                <FlatNumber>3-131/7</FlatNumber>
+                <Street>prassu's street</Street>
+                <city>princess city</city>
+            </CurrentAddress> 
+            </Addresses>
+    </student>  
+    <student> 
+     <! -- field -- >
+        <FirstName>Prassa</FirstName>
+        <DOB>08-05-2001</DOB>
+        <Email>prasanakopparthi3011@gmail.com</Email>
+        <Addresses>
+            <PermAddress>
+                <FlatNumber>3-131/7</FlatNumber>
+                <Street>prassu's street</Street>
+                <city>princess city</city>
+            </PermAddress>
+            <CurrentAddress>
+                <FlatNumber>3-131/7</FlatNumber>
+                <Street>prassu's street</Street>
+                <city>princess city</city>
+            </CurrentAddress> 
+            </Addresses>
+    </student>   
+</students>  

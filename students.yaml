@@ -1,0 +1,27 @@
+- name: "prassu"
+  d0b: "08-05-2001"
+  mobileNumber: 123456789
+  adddresses:
+  - flatnumber: 104
+    street: "princess street"
+    city: bhimavaram
+    type: current
+
+  - flatnumber: 104
+    street: "princess street"
+    city: bhimavaram
+    type: perm
+
+- name: "prasa"
+  d0b: "08-05-2001"
+  mobileNumber: 123456789
+  adddresses:
+  - flatnumber: 104
+    street: "princess street"
+    city: bhimavaram
+    type: current
+
+  - flatnumber: 104
+    street: "princess street"
+    city: bhimavaram
+    type: perm

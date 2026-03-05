@@ -1,0 +1,7 @@
+- name: ping the server
+  hosts: web
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+      name:nginx
+      state:present
