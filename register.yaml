@@ -4,4 +4,5 @@
   tasks:
   - name: to print "date"
     ansible.builtin.command: date
+    register: dates
     
