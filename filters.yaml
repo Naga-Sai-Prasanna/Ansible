@@ -2,7 +2,7 @@
   hosts: local
   connection: local 
   vars: 
-    topics: linux,shell
+    topics: linux,shell,aws
     course: "devops with aws"
     myip: 2001:4860:7:805::5c
     tagsMap:
@@ -23,4 +23,42 @@
          "value": "catalogue"
       }
       ]
-         
+  tasks:  
+  - name: greeting
+    ansible.builtin.debug:
+     msg: "hi prassu, {{ GREETING  | default ( 'good morning' ) }}" 
+
+  - name: convert string to list 
+    ansible.builtin.debug:
+       msg: "{{ topics | split(',') }}"
+
+  
+  - name: convert map to list 
+    ansible.builtin.debug:
+       msg: "{{ tagsMap | dict2items }}"       
+
+  - name: convert  list to map 
+    ansible.builtin.debug:
+       msg: "{{ dict2items | tagsMap  }}"    
+
+  - name: read students yaml 
+    ansible.builtin.set_fact:
+     student.yaml: "{{ lookup('file','students.yaml' ) | from_yaml }}"   
+
+  - name: convert yaml to json
+    anansible.builtin.debug:
+     msg: "{{ students.yaml | to_nice_json }}"         
+
+  - name: convert to uppercase
+    anansible.builtin.debug:
+     msg: "{{ course | upper }}"    
+
+  
+  - name: convert to uppercase
+    anansible.builtin.debug:
+     msg: "{{ course | lower }}"     
+
+  
+  - name: check ipv4 
+    anansible.builtin.debug:
+     msg: "{{ myip | ansible.utils.ipv4 }}"     
