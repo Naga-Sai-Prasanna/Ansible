@@ -12,9 +12,9 @@
   - name: password
     prompt: please enter your password
     private: true 
-  # tasks:
-  # # - name: print name
-  #   vars:
-  #   #  NAME: "ansible from task"  
+  tasks:
+  - name: print name
+    vars:
+      NAME: "ansible from task"  
     ansible.builtin.debug:
       msg: "hi {{ NAME }}" 
