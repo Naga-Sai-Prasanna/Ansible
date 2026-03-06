@@ -15,3 +15,6 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: absent  
+    loop:
+    - mysql 
+    - nginx   
