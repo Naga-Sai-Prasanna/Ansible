@@ -1,0 +1,7 @@
+- name: register
+  hosts: local
+  connection: local
+  tasks:
+  - name: to print "date"
+    ansible.builtin.command: date
+    
