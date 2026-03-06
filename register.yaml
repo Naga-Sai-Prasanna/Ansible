@@ -6,3 +6,6 @@
     ansible.builtin.command: date
     register: dates
     
+  - name: to print "date"
+    ansible.builtin.debug:
+  
