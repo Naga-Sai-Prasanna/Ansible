@@ -3,7 +3,7 @@
   connection: local
   vars:
     PROGRAM: "devsecops with aws"
-    DURATION: 140hrs
+    DURATION: 140 hrs
     IS_LIVE: true
     DETAILS: 
       MONTH: 4
