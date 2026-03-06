@@ -1,6 +1,6 @@
-#play level
-- name: play level variables
-  hosts: web
+#task level
+- name: task level variables
+  hosts: local
   connection: local
   vars:
    Course: "devops with aws"
@@ -8,5 +8,7 @@
    Trainer: "siva"
   tasks:
   - name: print variables
+    vars: 
+     Course: "ansible"
     ansible.builtin.debug:
-      msg: "Course is {{Course}}, Trainer is {{Trainer}}"
+      msg: "Course is {{Course}}, Trainer is {{Trainer}}
