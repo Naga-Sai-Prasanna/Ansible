@@ -10,3 +10,8 @@
     loop:
     - mysql 
     - nginx  
+
+  - name: install packages 
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: absent  
