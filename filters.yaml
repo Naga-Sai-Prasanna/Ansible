@@ -43,11 +43,11 @@
 
   - name: read students yaml 
     ansible.builtin.set_fact:
-     students.yaml: "{{ lookup('file','students.yaml' ) | from_yaml }}"   
+     students_yaml: "{{ lookup('file','students.yaml' ) | from_yaml }}"   
 
   - name: convert yaml to json
     ansible.builtin.debug:
-     msg: "{{ students.yaml | to_nice_json }}"         
+     msg: "{{ students_yaml | to_nice_json }}"         
 
   - name: convert to uppercase
     ansible.builtin.debug:
