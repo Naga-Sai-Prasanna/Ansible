@@ -46,19 +46,19 @@
      student.yaml: "{{ lookup('file','students.yaml' ) | from_yaml }}"   
 
   - name: convert yaml to json
-    anansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{ students.yaml | to_nice_json }}"         
 
   - name: convert to uppercase
-    anansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{ course | upper }}"    
 
   
   - name: convert to uppercase
-    anansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{ course | lower }}"     
 
   
   - name: check ipv4 
-    anansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{ myip | ansible.utils.ipv4 }}"     
