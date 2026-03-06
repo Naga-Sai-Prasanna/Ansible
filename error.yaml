@@ -3,13 +3,13 @@
   connection: local
   tasks: 
   - name: check user exists or not
-    ansible.bultin.command: id roboshop
+    ansible.builtin.command: id roboshop
     register: users_output
     ignore_errors: true
 
   - name: print the output  
     ansible.builtin.debug: 
-      msg: "{{ users_output }}" 
+       msg: "{{ users_output }}" 
 
   - name: create user
     ansible.bultin.command: useradd roboshop 
