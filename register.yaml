@@ -8,4 +8,4 @@
     
   - name: to print "date"
     ansible.builtin.debug:
-  
+       msg: "{{ dates }}"
