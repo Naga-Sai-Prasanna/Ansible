@@ -1,6 +1,6 @@
 - name: demo on data types
   hosts: local
-  connections: local
+  connection: local
   vars:
     PROGRAM: "devsecops with aws"
     DURATION: 140hrs
