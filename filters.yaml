@@ -1,0 +1,26 @@
+- name: filters 
+  hosts: local
+  connection: local 
+  vars: 
+    topics: linux,shell
+    course: "devops with aws"
+    myip: 2001:4860:7:805::5c
+    tagsMap:
+      name: ansible
+      project: roboshop
+      component: catalogue
+    tagsList: [
+      { 
+         "key": "name",
+         "value":" ansible"
+      },
+      { 
+         "key": "project",
+         "value": "roboshop"
+      },
+      { 
+         "key": "component",
+         "value": "catalogue"
+      }
+      ]
+         
