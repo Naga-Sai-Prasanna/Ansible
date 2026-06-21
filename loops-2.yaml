@@ -11,7 +11,7 @@
     - mysql 
     - nginx  
 
-  - name: install packages 
+  - name: uninstall packages 
     ansible.builtin.package:
       name: "{{ item }}"
       state: absent  

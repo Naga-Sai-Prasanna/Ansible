@@ -1,0 +1,68 @@
+- name: package installation
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: installing package
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - git 
+    - curl 
+    - vim 
+    - htop 
+  - name: print the output
+    ansible.builtin.debug:
+       msg: "installation is done"    
+
+
+
+
+
+
+
+- name: package installation
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: installing package
+    ansible.builtin.package:
+      name: nginx
+      state: present
+    when: ansible_distribution == "Ubuntu"
+
+  - name: installing package
+    ansible.builtin.service:
+      name: nginx
+      state: started  
+      
+           
+- name: adding users 
+  hosts: local
+  connection: local
+  become: yes
+  tasks:  
+  - name: user adding
+    ansible.builtin.user:
+       name: "{{ item }}"
+       shell: "/bin/bash"
+       create_home: yes
+    loop:
+    - dev1
+    - dev2 
+    - tester1 
+
+  - name: user adding
+    ansible.builtin.debug:       
+      msg: "the created user is {{ item }}"
+    loop:
+    - dev1
+    - dev2 
+    - tester1 
+
+
+
+    
+  
